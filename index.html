@@ -77,3 +77,87 @@
 </head>
 <body>
   <header
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naffic</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #121212;
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+
+    header {
+      width: 100%;
+      padding: 20px;
+      font-size: 1.5em;
+      font-weight: bold;
+      text-align: center;
+      background: #1f1f1f;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .novel-title {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .novel-desc {
+      color: #ccc;
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      font-size: 0.9em;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>Naffic - Web</header>
+
+  <h2 class="novel-title">Welcome to Naffic</h2>
+  <p class="novel-desc">
+    This is your website connected to Firebase.
+  </p>
+
+  <footer>© 2025 Naffic</footer>
+
+  <!-- 🔥 FIREBASE CONFIG SHOULD BE HERE -->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAuSemA_Yw0ILVN-ngcw3IjTDSynuRGqs8",
+      authDomain: "naffic-71538.firebaseapp.com",
+      projectId: "naffic-71538",
+      storageBucket: "naffic-71538.firebasestorage.app",
+      messagingSenderId: "92795782385",
+      appId: "1:92795782385:web:8749860933f4749dd4d550",
+      measurementId: "G-7NLW7NX099"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+</body>
+</html>
