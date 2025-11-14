@@ -3,147 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Naffic – Platform to Feel Your Imagination Come to Life</title>
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
-    body {
-      margin: 0;
-      font-family: 'Playfair Display', serif;
-      background-color: #0d0d0d;
-      color: #f5f5f5;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-      padding: 0;
-    }
-    header {
-      width: 100%;
-      text-align: center;
-      padding: 30px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
-    header h1 {
-      font-size: 2.5em;
-      margin: 0;
-      letter-spacing: 1px;
-    }
-    header p {
-      font-size: 1em;
-      color: #bbb;
-      margin-top: 8px;
-    }
-    main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 20px;
-      width: 100%;
-      max-width: 900px;
-    }
-    .novel-card {
-      width: 100%;
-      background-color: #1a1a1a;
-      border-radius: 16px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 0 10px rgba(255,255,255,0.05);
-      transition: transform 0.2s ease;
-    }
-    .novel-card:hover {
-      transform: translateY(-5px);
-    }
-    .novel-title {
-      font-size: 1.6em;
-      margin-bottom: 10px;
-      color: #fff;
-    }
-    .novel-desc {
-      color: #ccc;
-      font-size: 1em;
-      line-height: 1.5em;
-    }
-    footer {
-      width: 100%;
-      text-align: center;
-      padding: 20px;
-      color: #888;
-      font-size: 0.9em;
-      border-top: 1px solid rgba(255,255,255,0.1);
-    }
-  </style>
-</head>
-<body>
-  <header
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Naffic</title>
+  <title>Naffic - Web</title>
 
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: #121212;
-      font-family: Arial, sans-serif;
-      color: #fff;
-    }
-
-    header {
-      width: 100%;
-      padding: 20px;
-      font-size: 1.5em;
-      font-weight: bold;
+      background: #0a0a0a;
+      font-family: "Poppins", sans-serif;
+      color: #ddd;
       text-align: center;
-      background: #1f1f1f;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
     }
 
-    .novel-title {
-      font-size: 1.2em;
-      margin-bottom: 10px;
+    h1 {
+      font-size: 3rem;
       color: #fff;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+      animation: fadeDown 1.2s ease forwards;
+      opacity: 0;
     }
 
-    .novel-desc {
-      color: #ccc;
-      font-size: 1em;
-      line-height: 1.5em;
+    .underline {
+      width: 120px;
+      height: 2px;
+      background: linear-gradient(to right, #9f4aff, #ff3b8d);
+      margin: 0 auto 20px auto;
+      border-radius: 20px;
+      animation: glowLine 2s ease-in-out infinite alternate;
+    }
+
+    p {
+      font-size: 1.1rem;
+      width: 80%;
+      max-width: 500px;
+      color: #bdbdbd;
+      line-height: 1.6;
+      animation: fadeUp 1.4s ease forwards;
+      opacity: 0;
     }
 
     footer {
+      position: absolute;
+      bottom: 20px;
       width: 100%;
       text-align: center;
-      padding: 20px;
-      color: #888;
-      font-size: 0.9em;
-      border-top: 1px solid rgba(255,255,255,0.1);
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    @keyframes glowLine {
+      0% { box-shadow: 0 0 6px #b06bff; }
+      100% { box-shadow: 0 0 20px #ff3b8d; }
+    }
+
+    @keyframes fadeDown {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 
 <body>
+  <h1>Naffic</h1>
+  <div class="underline"></div>
 
-  <header>Naffic - Web</header>
-
-  <h2 class="novel-title">Welcome to Naffic</h2>
-  <p class="novel-desc">
-    This is your website connected to Firebase.
+  <p>
+    A dark corner crafted for stories, emotions, and worlds that feel just a little too real.
   </p>
 
   <footer>© 2025 Naffic</footer>
 
-  <!-- 🔥 FIREBASE CONFIG SHOULD BE HERE -->
+  <!-- 🔥 Firebase Config -->
   <script type="module">
-    // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
 
-    // Your web app's Firebase configuration
     const firebaseConfig = {
       apiKey: "AIzaSyAuSemA_Yw0ILVN-ngcw3IjTDSynuRGqs8",
       authDomain: "naffic-71538.firebaseapp.com",
@@ -154,7 +100,6 @@
       measurementId: "G-7NLW7NX099"
     };
 
-    // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
   </script>
