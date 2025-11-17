@@ -1,119 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Naffic - Novels</title>
+  <meta charset="UTF-8">
+  <title>Naffic – Novels</title>
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px 20px;
+    }
 
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    background: #0a0a0a;
-    font-family: "Poppins", sans-serif;
-    color: #fff;
-  }
+    h1 {
+      font-size: 2.5rem;
+      color: #ffcc00;
+      margin-bottom: 40px;
+    }
 
-  header {
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    font-size: 1.8em;
-    font-weight: 600;
-    background: #111;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-  }
+    .novel-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
 
-  .container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 40px auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
+    .card {
+      background: #111;
+      width: 300px;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #5a4200;
+      box-shadow: 0 0 15px rgba(255, 204, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-  .card {
-    background: #151515;
-    padding: 20px;
-    border-radius: 15px;
-    border: 1px solid rgba(255,255,255,0.15);
-    transition: 0.3s ease;
-  }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px rgba(255, 204, 0, 0.4);
+    }
 
-  .card:hover {
-    transform: translateY(-5px);
-    border-color: #9f4aff;
-    box-shadow: 0 0 15px #9f4aff55;
-  }
+    .title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #ffcc00;
+    }
 
-  .title {
-    font-size: 1.4em;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #fff;
-  }
+    .desc {
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+      line-height: 1.5;
+      color: #ddd;
+    }
 
-  .desc {
-    font-size: 0.95em;
-    color: #bbb;
-    margin-bottom: 15px;
-    line-height: 1.5em;
-  }
+    .btn {
+      display: inline-block;
+      background: #ffcc00;
+      color: #000;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
 
-  .btn {
-    display: inline-block;
-    padding: 8px 18px;
-    background: #9f4aff;
-    color: #fff;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 0.9em;
-    font-weight: 500;
-  }
+    .btn:hover {
+      background: #e6b800;
+    }
 
-  footer {
-    margin-top: 50px;
-    padding: 20px;
-    text-align: center;
-    color: #666;
-    font-size: 0.9em;
-  }
-</style>
+    a.back {
+      display: block;
+      margin-top: 50px;
+      color: #ffcc00;
+      font-size: 1.1rem;
+      text-decoration: none;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>📚 My Novels</header>
+  <h1>My Novels</h1>
 
-<div class="container">
+  <div class="novel-container">
 
-  <div class="card">
-    <div class="title">Destined With – Never Wanted But Needed</div>
-    <div class="desc">A slow-burn emotional journey of Zoye and Kevin — heartbreak, healing, and the love that chose them.</div>
-    <a href="destined.html" class="btn">Read</a>
+    <!-- Novel 1 -->
+    <div class="card">
+      <div class="title">Destined With – Never Wanted But Needed</div>
+      <div class="desc">
+        A slow-burn emotional journey of Zoye and Kevin — heartbreak, healing, and a love that grows quietly.
+      </div>
+      <a href="destined.html" class="btn">Read</a>
+    </div>
 
-  <div class="card">
-    <div class="title">An Elmwood Trail – Novel Adaptation</div>
-    <div class="desc">A thrilling mystery filled with clues, twists, and dark secrets waiting to be uncovered.</div>
-    <a href="#" class="btn">Read</a>
   </div>
 
-  <div class="card">
-    <div class="title">Unwritten Vows</div>
-    <div class="desc">A poetic, painful, and beautifully tragic love story of two souls fighting fate.</div>
-    <a href="#" class="btn">Read</a>
-  </div>
-
-  <div class="card">
-    <div class="title">Run Angel Run</div>
-    <div class="desc">A gripping emotional tale about running from fear, running toward truth, and finding love in chaos.</div>
-    <a href="#" class="btn">Read</a>
-  </div>
-
-</div>
-
-<footer>© 2025 Naffic</footer>
+  <a class="back" href="index.html">← Back to Home</a>
 
 </body>
-  </html>
+</html>
