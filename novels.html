@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Naffic – Novels</title>
+
   <style>
     body {
       background: #000;
@@ -33,6 +34,7 @@
       border: 1px solid #5a4200;
       box-shadow: 0 0 15px rgba(255, 204, 0, 0.2);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      max-width: 320px;
     }
 
     .card:hover {
@@ -40,21 +42,29 @@
       box-shadow: 0 0 25px rgba(255, 204, 0, 0.4);
     }
 
-    .title {
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .title, h2 {
       font-size: 1.3rem;
       font-weight: bold;
       margin-bottom: 10px;
       color: #ffcc00;
     }
 
-    .desc {
+    .desc, p {
       font-size: 0.95rem;
       margin-bottom: 20px;
       line-height: 1.5;
       color: #ddd;
     }
 
-    .btn {
+    .btn, .card a {
       display: inline-block;
       background: #ffcc00;
       color: #000;
@@ -65,7 +75,7 @@
       transition: 0.3s;
     }
 
-    .btn:hover {
+    .btn:hover, .card a:hover {
       background: #e6b800;
     }
 
@@ -77,6 +87,7 @@
       text-decoration: none;
     }
   </style>
+
 </head>
 
 <body>
@@ -84,42 +95,33 @@
   <h1>My Novels</h1>
 
   <div class="novel-container">
-    
+
     <div class="card">
-  <img src="IMG-20251114-WA0003.jpg" alt="Destined With Cover">
-  <h2>Destined With – Never Wanted But Needed</h2>
-  <p>A slow-burn emotional journey of Zoye and Kevin — heartbreak, healing, and the love that found them when nothing else did.</p>
-  <a href="destined.html">Read</a>
-      
-    </div>
-    <div class="card">
-  <img src="IMG-20251114-WA0003.jpg" alt="Bittersweet Friendship Cover">
-  <h2>Bittersweet Friendship</h2>
-  <p>One confession. One betrayal. A friendship built over years can collapse in seconds.</p>
- <a href="bittersweet.html">Read</a>
-      
-    </div>
-    <div class="card">
-  <img src="IMG-20251114-WA0003.jpg" alt="Gloomy Enigma Cover">
-  <h2>Gloomy Enigma</h2>
-  <p>He followed the rules, she broke every one of them — until danger forced him to choose between duty and her.</p>
-  <a href="gloomy.html">Read</a>
-      
-    </div>
-    <div class="card">
-  <img src="IMG-20251114-WA0003.jpg" alt="Little Angel Cover">
-  <h2>Little Angel</h2>
-  <p>One moment of crime brings him face-to-face with the only angel he ever wanted to protect.</p>
- <a href="angel.html">Read</a>
+      <img src="IMG-20251114-WA0003.jpg" alt="Destined With Cover">
+      <h2>Destined With – Never Wanted But Needed</h2>
+      <p>A slow-burn emotional journey of Zoye and Kevin — heartbreak, healing, and the love that found them when nothing else did.</p>
+      <a href="destined.html">Read</a>
     </div>
 
-    <!-- Novel 1 -->
     <div class="card">
-      <div class="title">Destined With – Never Wanted But Needed</div>
-      <div class="desc">
-        A slow-burn emotional journey of Zoye and Kevin — heartbreak, healing, and a love that grows quietly.
-      </div>
-      <a href="destined.html" class="btn">Read</a>
+      <img src="IMG-20251114-WA0003.jpg" alt="Bittersweet Friendship Cover">
+      <h2>Bittersweet Friendship</h2>
+      <p>One confession. One betrayal. A friendship built over years can collapse in seconds.</p>
+      <a href="bittersweet.html">Read</a>
+    </div>
+
+    <div class="card">
+      <img src="IMG-20251114-WA0003.jpg" alt="Gloomy Enigma Cover">
+      <h2>Gloomy Enigma</h2>
+      <p>He followed the rules, she broke every one of them — until danger forced him to choose between duty and her.</p>
+      <a href="gloomy.html">Read</a>
+    </div>
+
+    <div class="card">
+      <img src="IMG-20251114-WA0003.jpg" alt="Little Angel Cover">
+      <h2>Little Angel</h2>
+      <p>One moment of crime brings him face-to-face with the only angel he ever wanted to protect.</p>
+      <a href="angel.html">Read</a>
     </div>
 
   </div>
